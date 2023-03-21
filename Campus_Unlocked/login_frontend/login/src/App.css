@@ -1,0 +1,117 @@
+body {
+  background-color: #ffdfc8!important;
+  
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+}
+       
+.custom-font{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+}
+.abs-center-x {
+  position: absolute;
+  left: 50%;
+  vertical-align: middle;
+  transform: translateX(-50%);
+}
+/* Style header */
+
+
+.logo {
+  height: 205px;
+  width: 210px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style main content */
+main {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #ffdfc8;
+  /* margin-top: 45px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading_home {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #ffdfc8;
+  /* padding-top: 5rem;  */
+  font-size: 50px;
+  /* padding-top: 0px; */
+  /* margin-top: 0px; */
+  color: #040404;
+  text-align: center; /* center align */
+}
+
+.description_home {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  font-size:25px;
+  background-color: #ffdfc8;
+  width: 75%;
+  padding: 20px;
+  /* margin: 0 auto 100px auto; */
+  text-align: justify; /* center align */
+}
+
+.heading_visitas {
+  position: absolute;
+  top: 400px;
+}
+
+.visit-options-container_home {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+ 
+}
+
+.visit-options_home {
+  position: absolute;
+  top: 600px;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #ffdfc8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;      
+  align-items: center;
+  flex-direction: row;
+}
+
+.option {
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #ffdfc8;
+        
+  font-size: 24px;
+  padding: 10px;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+  text-align: center; /* center align */
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  /* background-color: rgba(203, 138, 10, 0.849); */
+  /* color: #dd6f0e; */
+  margin-top: -10px;
+  object-fit:fill ;
+  background-color: #dd6f0e;
+}
+
+
+
+  
