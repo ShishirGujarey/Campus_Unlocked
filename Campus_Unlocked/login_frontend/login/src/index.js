@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import App from './App'
-import reportWebVitals from './reportWebVitals'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/homepage'
 import Login from './components/login.component'
@@ -23,7 +21,6 @@ import Swim_APP from './pages/swim';
 import Stad_APP from './pages/stad';
 import Pro_APP from './pages/pronite';
 import MT_APP from './pages/mt';
-import Air_App from './pages/air';
 import NS_APP from './pages/newsac';
 import Doaa_app from './pages/doaacant';
 import Flight_app from './pages/flight';
@@ -33,8 +30,8 @@ import Park_app from './pages/park67';
 import Ox_app from './pages/oxdtn';
 import LHC_APP from './pages/lhc';
 import ImageUpload from './components/uploader'
-import Upload from './components/upload'
-import Nearby from './components/Nearbyplaces'
+import Near from './components/nearby'
+import Trending_photos from './components/trending'
 
 const router=createBrowserRouter([
   {
@@ -45,6 +42,7 @@ const router=createBrowserRouter([
     path:'/signup',
     element:<SignUp/>,
   },
+  
   {
     path:'/signin',
     element:<Login/>,
@@ -76,10 +74,6 @@ const router=createBrowserRouter([
     {
       path: "/rm",
       element: <RM_App />,
-    },
-    {
-      path: "/air",
-      element: <Air_App />,
     },
     {
       path: "/lib",
@@ -156,8 +150,12 @@ const router=createBrowserRouter([
     },
     {
       path:"/near",
-      element:<Nearby/>
+      element:<Near/>
     },
+    {
+      path:"/trending",
+      element:<Trending_photos/>
+    }
 
 
 
@@ -169,8 +167,3 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>,
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals()

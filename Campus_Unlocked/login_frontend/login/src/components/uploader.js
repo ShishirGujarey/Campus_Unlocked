@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import LogoutButton from './logout';
+import "../upload.css"
+import Top from "./Header"
 
 function ImageUpload() {
     const [name, setName] = useState("");
@@ -40,10 +43,11 @@ function ImageUpload() {
 
     return (
         <form>
+            <Top/>
         <div class="container_up">
             <div class="rectangle"></div>
         </div>
-        <h2>Upload Photo</h2>
+        <h2 className="h2_upload">Upload Photo</h2>
         <div class="container_up">
             <label for="location">Select Location:</label>
             <select name="location" id="location"  onChange={(e)=>setLocation(e.target.value)}>

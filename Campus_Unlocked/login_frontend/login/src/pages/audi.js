@@ -3,6 +3,7 @@ import Top from './header_page';
 // import Example from './components/gallery';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import AudiSlideShow from '../fecth/auditorium';
 
 const Example = () => {
     const images = [
@@ -62,7 +63,8 @@ The auditorium is equipped with modern audio-visual equipment, including a high-
 Apart from the main auditorium, there are also smaller conference rooms and seminar halls located within the same building, making it a comprehensive facility for hosting various academic and cultural events.
 
 Overall, the auditorium of IIT Kanpur is a modern and well-equipped facility that provides an excellent venue for hosting various events and functions. The spacious stage, comfortable seating, and state-of-the-art audio-visual equipment make it an ideal venue for cultural programs, seminars, conferences, and other academic events.</p>
-      
+      <br></br>
+      <AudiSlideShow/>
     </div>
   );
 }

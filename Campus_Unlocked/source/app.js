@@ -9,6 +9,7 @@ const randomstring = require("randomstring");
 const bodyParser = require("body-parser");
 const fs = require("fs");
 const path = require("path"); 
+const router = express.Router();
 
 const oatModel = require("./models/oat.model");
 const ccdModel = require("./models/ccd.model");
@@ -161,7 +162,7 @@ app.post("/login_user", async(req, res)=>{
         if(res.status(201)){
             return res.json({status:"ok", data:token});
         }else{
-            return res.json({error:"error", data:token});
+            return res.json({error:"error"});
         }
     }
     
@@ -228,7 +229,249 @@ app.post("/upload-image", async (req, res) => {
 
   }
 })
-
 app.listen(3000, ()=>{
-    console.log("Server Started");
+  console.log("Server Started");
 });
+
+
+app.get("/getimageoat", async (req, res) => {
+  try {
+    await oatModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimageccd", async (req, res) => {
+  try {
+    await ccdModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagedoaa", async (req, res) => {
+  try {
+    await doaa_canteenModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagedoaa", async (req, res) => {
+  try {
+    await doaa_canteenModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimageaudi", async (req, res) => {
+  try {
+    await auditoriumModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimageflight", async (req, res) => {
+  try {
+    await flight_laboratoryModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagehockey", async (req, res) => {
+  try {
+    await hockey_groundModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagelibrary", async (req, res) => {
+  try {
+    await p_k_kelkar_libraryModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+// app.get("/getimagelhc", async (req, res) => {
+//   try {
+//     await p_k_kelkar_libraryModel.find({}).then(data => {
+//       res.send({ status: "ok", data: data })
+//     })
+
+//   } catch (error) {
+
+//   }
+// })
+
+app.get("/getimagemamamio", async (req, res) => {
+  try {
+    await mama_mioModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagemt", async (req, res) => {
+  try {
+    await mtModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagenewsac", async (req, res) => {
+  try {
+    await new_sacModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagenursery", async (req, res) => {
+  try {
+    await nurseryModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimageoldsac", async (req, res) => {
+  try {
+    await old_sacModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimageoutreach", async (req, res) => {
+  try {
+    await outreachModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimageoxdn", async (req, res) => {
+  try {
+    await oxidation_pondModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagepark67", async (req, res) => {
+  try {
+    await park67Model.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagepronite", async (req, res) => {
+  try {
+    await pronite_groundModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagerm", async (req, res) => {
+  try {
+    await rm_kdModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagestadium", async (req, res) => {
+  try {
+    await stadiumModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimageswim", async (req, res) => {
+  try {
+    await swimming_poolModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})
+
+app.get("/getimagetennis", async (req, res) => {
+  try {
+    await tennis_courtModel.find({}).then(data => {
+      res.send({ status: "ok", data: data })
+    })
+
+  } catch (error) {
+
+  }
+})

@@ -5,44 +5,13 @@
 }
 
 body {
-  background-color: #ffdfc8!important;
+  background-color: #dad4d1!important;
   min-height: 100vh;
   display: flex;
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
 }
-.navbar 
-         {
-            /* border-bottom: 1px solid #735e59; */
-            height:80px;
-            font-size: 60px;
-            background-color: #ff964b;
-            -webkit-box-shadow: 0 4px 6px -6px #222;
-            -moz-box-shadow: 0 4px 6px -6px #222;
-            box-shadow: 0 4px 6px -6px #222;
-         }
 
-        .navbar-custom {
-            /* background-color: #010153; */
-            font-size: 60px;
-            color: #000000;
-            text-align:center;
-        }
-        /* Modify brand and text color */
-        
-        .custom-font{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: larger;
-        }
-        .abs-center-x {
-          position: absolute;
-          left: 50%;
-          vertical-align: middle;
-          transform: translateX(-50%);}
-        .navbar-brand img {
-          margin-left: 10px;
-            max-width: 80px;
-          }
 
 h1,
 h2,
@@ -106,7 +75,6 @@ html,
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
-  background-color: orange !important;
   height: 0.1rem !important;
 }
 
@@ -124,7 +92,7 @@ html,
 }
 
 body {
-  background-color: #ffdfc8!important;
+  background-color: #dad4d1!important;
   
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;

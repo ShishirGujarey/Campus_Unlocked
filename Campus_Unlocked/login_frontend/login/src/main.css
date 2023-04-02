@@ -1,5 +1,5 @@
 body {
-    background-color: #ffdfc8;
+    background-color: #dad4d1;
   }
   
   
@@ -12,14 +12,14 @@ body {
   
   .container1 {
     width: 100%;
-    padding-top:180px;
+    padding-top:100px;
     display: flex;
     justify-content: space-evenly;
   }
   
   .container2 {
     width: 100%;
-    padding-top:120px;
+    padding-top:80px;
     display: flex;
     justify-content: space-evenly;
   }

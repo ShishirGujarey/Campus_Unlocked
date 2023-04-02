@@ -46,10 +46,12 @@
   .each-slide>div img {
     width: 100%;
     height: 100%;
-    object-fit: none;
+    object-fit: cover;
   }
   .i{
-    object-fit: none;
+    margin-left: 200px;
+    border-radius: 15px;
+    object-fit: cover;
   }
   .each-slide p {
     width: 25%;
@@ -68,4 +70,17 @@
   /* justify-content: 'center'; */
   /* background-size: 'cover'; */
   height: '100px';
+  }
+
+  .pages_h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b1937a;
+  }
+  
+  .h2_pages{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b1937a;
+    margin-top: -100px;
   }

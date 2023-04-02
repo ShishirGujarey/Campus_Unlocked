@@ -4,7 +4,9 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./must.css"
+import { useEffect, useState } from 'react';
+import "./must.css";
+import './header.css';
 
 // import React from 'react';
 const options = [
@@ -47,42 +49,63 @@ function DropdownMenu() {
 
 
 
+// import LogoutButton from './logout';
+
+  const handleLogout = () => {
+    window.localStorage.clear(); // remove token from local storage
+    window.location.href = '/'; // redirect to main page
+  };
+
+  const handlehome= () =>{
+    window.location.href = '/mainpage';
+  };
+
 function Top() {
+  const [token, setToken] = useState(localStorage.getItem('token'));
+
+    useEffect(() => {
+        setToken(localStorage.getItem('token'));
+  }, []);
   return (
+    
     <div className="top">
-    <img className="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/IIT_Kanpur_Logo.svg/800px-IIT_Kanpur_Logo.svg.png"/>
+    <img className="logo_header" src={require('./IITK Logo Black.png')}/>
       <h1 className="campus">CAMPUS UNLOCKED</h1>
+      <div>
       <DropdownMenu/>
-      <button className="homebutton">Home</button>
+      {token !== null ? (
+  <button onClick={handleLogout} className="header_button">Logout</button>
+) : null}
+      <button onClick={handlehome} className="header_button">Home</button>
+      </div>
     </div>
   );
 }
-
 function ImageGallery() {
   return (
     <div className="image-gallery">
         <h1 >Must Visit Places</h1>
       <div className="row1">
-        <Link to="/oat" className="column">
-          <img src="http://www.iitk.ac.in/inacomm15/images/DSC_1035.JPG" alt="Image 1" className="r" />
+        <Link to="/oat" className="column1">
+          <img src="http://www.iitk.ac.in/inacomm15/images/DSC_1035.JPG" alt="Image 1" className="ri" />
           <h3>OAT</h3>
         </Link>
-        <Link to="/lhc" className="column">
-          <img src="http://www.iitk.ac.in/math/workshop-and-conference/ICMCB/pic/LHC-1.jpg" alt="Image 2" className="r"/>
+        <Link to="/lhc" className="column1">
+          <img src="http://www.iitk.ac.in/math/workshop-and-conference/ICMCB/pic/LHC-1.jpg" alt="Image 2" className="ri"/>
           <p>Lecture Hall Complex</p>
         </Link>
-        <Link to="/lib" className="column">
-          <img src="https://iitk.ac.in/dora/givingback/assets/img/lib.jpg" alt="Image 3" className="r"/>
+        <Link to="/lib" className="column1">
+          <img src="https://iitk.ac.in/dora/givingback/assets/img/lib.jpg" alt="Image 3" className="ri"/>
           <p>PK Kelkar Library</p>
           </Link>
       </div>
       <div className="row2">
-      <Link to="/rm" className="column">
-          <img src="https://qph.cf2.quoracdn.net/main-qimg-ba32e62752c191dbb2aaefdbad7808fb-lq" alt="Image 4" className="r"/>
+      <Link to="/rm" className="column1">
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-ba32e62752c191dbb2aaefdbad7808fb-lq" alt="Image 4" className="ri"/>
           <p>Rajeev Motwani Building</p>
           </Link>
-        <Link to="/air" className="column">
-          <img src="https://fastly.4sqi.net/img/general/600x600/57723951_FUTYjaEAO7tIItJoTNagpSq9cdQiusRK9MQfTD0geuA.jpg" alt="Image 5" className="r"/>
+        <Link to="/air" className="column1">
+          <img src="https://fastly.4sqi.net/img/general/600x600/57723951_FUTYjaEAO7tIItJoTNagpSq9cdQiusRK9MQfTD0geuA.jpg" alt="Image 5" className="ri"/>
           <p>Airstrip</p>
           </Link>
       </div>

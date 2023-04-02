@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+import Top from './Header';
+import './login.css';
 export default class Login extends Component {
   
   constructor(props){
@@ -39,6 +40,7 @@ export default class Login extends Component {
         alert("User not Found");
       }
       else if (data.status === "ok"){
+        window.localStorage.setItem("token",data.data);
         window.location.href = '/mainpage';
       }
     })
@@ -46,43 +48,43 @@ export default class Login extends Component {
   
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <h3>Sign In</h3>
-
-        <div className="mb-3">
+      <><Top></Top><form onSubmit={this.handleSubmit}>
+         <div className="container_login"><div className="rectangle_login"></div></div>
+        <div className='container_login'><h3 className='heading_login'>Sign In</h3></div>
+        
+        <div className="container_login text1_login">
+        <div className="textbox_login">
           <label>Email address</label>
           <input
             type="email"
             className="form-control"
             placeholder="Enter email"
-            onChange={(e)=>this.setState({email : e.target.value})}
-          />
+            onChange={(e) => this.setState({ email: e.target.value })} />
         </div>
-
-        <div className="mb-3">
+        </div>
+        <div className="container_login">
+        <div className="textbox_login">
           <label>Password</label>
           <input
             type="password"
             className="form-control"
             placeholder="Enter password"
-            onChange={e=>this.setState({password : e.target.value})}
-          />
+            onChange={e => this.setState({ password: e.target.value })} />
         </div>
-
-        <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+        </div>
+        <div className="container_login">
+        
+          <button type="submit" className="button_login">
             Submit
           </button>
+        
         </div>
-        {/* <div className="d-grid">
-          <button type="button" className="btn btn-primary" onClick={window.location.assign("/mainpage")}>
-            Click
-          </button>
-        </div> */}
+        <div className="container_login">
         <p className="forgot-password text-right">
           Not registered <a href="/signup">sign up?</a>
         </p>
-      </form>
+        </div>
+      </form></>
     )
   }
 }

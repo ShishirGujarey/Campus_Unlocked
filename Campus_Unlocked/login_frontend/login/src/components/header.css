@@ -1,0 +1,38 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(203, 138, 10, 0.849); */
+    /* color: #030052; */
+    object-fit:fill ;
+    height: 100px;
+    margin-left: -10px;
+    background-color: #030052;
+  }
+  .logo_header {
+    margin-top: 10px;
+    width:70px;
+
+  }
+  .campus{
+    margin-top: 10px;
+    margin-left: 100px;
+    font-weight: bold;
+  }
+  .header_button {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 23px;
+    margin-left: 10px;
+    font-weight:bold;
+    color: rgb(6, 20, 20);
+    background-color: #d1b7a1;
+  }
+  .header_button:hover {
+    background-color: #030052;
+    transform:scale(1.1);
+  }
+
+
+  

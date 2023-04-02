@@ -19,13 +19,14 @@
   .row2 {
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     margin-left: 380px;
     margin-right: 380px;
     margin-top: 20px;
+
   }
   
-  .column {
+  .column1 {
     display: flex;
     flex-direction: column;
     /* height:260px; */
@@ -35,19 +36,24 @@
     /* border: 1px solid #101010; */
     /* border-radius: 0px; */
     padding: 10px;
-    background: linear-gradient(to bottom, #e97910af, #b1930f);
-   border: 1px solid #dd6f0e;
+    /* background: linear-gradient(to bottom, #e97910af, #b1930f); */
+   border: 1px solid #b1937a;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
    padding: 20px;
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #333;
+    width: 250px;
+    height: 300 px;
+    background-color: #d1b7a1;
     
   }
-  .column:hover {
-    background-color: #ccc;
-    transform:scale(1.1);
+  .column1:hover {
+    /* background-color: #11bdac;
+     */
+     transform:scale(1.1);
+     
   }
 
 /* .overlay {
@@ -62,12 +68,8 @@
 	text-align: center;
 } */ 
 .r {
-    /* border-radius: 50%; */
-    width: 250px;
-    height: 150px;
-    object-fit: fill;
-    /* -o-object-fit: fill; */
-    margin-bottom: 2px;
+    height:max-content;
+    width:max-content;
   }
   .top {
     display: flex;
@@ -76,10 +78,10 @@
     padding-right: 2rem;
     padding-left: 2rem;
     /* background-color: rgba(203, 138, 10, 0.849); */
-    /* color: #dd6f0e; */
+    /* color: #b1937a; */
     margin-top: -10px;
     object-fit:fill ;
-    background-color: #e67a1b;
+    background-color: #b1937a;
   }
   
   .select-box {
@@ -96,7 +98,7 @@
     border-radius: 10px;
     font-size: 2rem;
     color: rgb(6, 20, 20);
-    background-color: rgb(217, 145, 21);
+    background-color: #d1b7a1;
   }
   .logo {
     width:13rem !important;
@@ -107,7 +109,7 @@
     margin-left: -150px;
   }
   .homebutton:hover {
-    background-color: #db771a;
+    background-color: #b1937a;
     transform:scale(1.1);
   }
   .dropdown {
@@ -116,12 +118,14 @@
   }
   
   .dropdown-btn {
-    background-color: #fff;
-    color: #333;
-    padding: 10px 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 23px;
+    margin-left: 10px;
+    font-weight:bold;
+    color: rgb(6, 20, 20);
+    background-color: #d1b7a1;
   }
   
   .dropdown-content {
@@ -155,3 +159,8 @@
     display: block;
   }
   
+  .ri{
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+  }

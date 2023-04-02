@@ -1,5 +1,5 @@
 body {
-  background-color: #ffdfc8!important;
+  background-color: #dad4d1!important;
   
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
@@ -31,7 +31,7 @@ body {
 main {
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
-  background-color: #ffdfc8;
+  background-color: #dad4d1;
   /* margin-top: 45px; */
   display: flex;
   justify-content: center;
@@ -42,11 +42,11 @@ main {
 .heading_home {
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
-  background-color: #ffdfc8;
+  /* background-color: #eeffc8; */
   /* padding-top: 5rem;  */
   font-size: 50px;
   /* padding-top: 0px; */
-  /* margin-top: 0px; */
+  margin-top: -220px;
   color: #040404;
   text-align: center; /* center align */
 }
@@ -55,7 +55,7 @@ main {
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
   font-size:25px;
-  background-color: #ffdfc8;
+  /* background-color: #dad4d1; */
   width: 75%;
   padding: 20px;
   /* margin: 0 auto 100px auto; */
@@ -64,25 +64,45 @@ main {
 
 .heading_visitas {
   position: absolute;
-  top: 400px;
+  top: 550px;
 }
 
-.visit-options-container_home {
+.a_home{
+  color:black;
+  text-decoration: none;
+}
+
+.a_home:hover{
+  color:black;
+}
+
+.visit-options-container_home1 {
   border: 2px solid black;
   padding: 20px;
   margin: 20px;
+  bottom: 8px;
+  font-size: 20px;
+  transform:translateX(-50%);
+  border-radius: 15px;
+  background-color: #b1937a;
+  text-decoration: none;
  
 }
 
+.visit-options-container_home1:hover{
+  color: black;
+  text-shadow: 1px 1px 5px white;
+}
 .visit-options_home {
   position: absolute;
+  left: 600px;
   top: 600px;
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
-  background-color: #ffdfc8;
+  /* background-color: #fffec8; */
   display: flex;
   flex-direction: row;
-  justify-content: space-around;      
+  justify-content: space-evenly;      
   align-items: center;
   flex-direction: row;
 }
@@ -90,7 +110,7 @@ main {
 .option {
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
-  background-color: #ffdfc8;
+  background-color: #dad4d1;
         
   font-size: 24px;
   padding: 10px;
@@ -101,17 +121,32 @@ main {
 }
 .top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  text-align: center;
   /* background-color: rgba(203, 138, 10, 0.849); */
-  /* color: #dd6f0e; */
-  margin-top: -10px;
+  /* color: #b1937a; */
   object-fit:fill ;
-  background-color: #dd6f0e;
 }
 
+.campus{
+  position: absolute;
+  color: black;
+  left: 500px;
+}
 
+.logo_homepage{
+  position: absolute;
+  top: 110px;
+  width: 150px;
+}
+
+.desc_box{
+  border: black;
+  border: 2px;
+  height: 300px;
+  width: 700px;
+  z-index: -1;
+}
 
   

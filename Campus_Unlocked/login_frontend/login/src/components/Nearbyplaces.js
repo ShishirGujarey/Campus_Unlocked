@@ -4,6 +4,7 @@ import '../near.css';
 function Nearby() {
     const dropdown = document.getElementById('dropdown');
 const imageContainer = document.getElementById('image-container_nearby');
+imageContainer.style.borderRadius="50%";
 
 
 const arr = [
@@ -82,6 +83,7 @@ dropdown.addEventListener('change', () => {
         imageContainer.appendChild(time3);
 
         imageContainer.style.display = 'block';
+        imageContainer.style.borderRadius= '60%';
     } else if (dropdown.value == "ccd") {
         // Create an image element and set its source attribute
         const image1 = document.createElement('img');
@@ -321,7 +323,7 @@ dropdown.addEventListener('change', () => {
         imageContainer.appendChild(dist3);
         imageContainer.appendChild(time3);
 
-        imageContainer.style.display = 'block';
+        imageContainer.style.display="block";
     } else if (dropdown.value == "mmo") {
         // Create an image element and set its source attribute
         const image1 = document.createElement('img');
