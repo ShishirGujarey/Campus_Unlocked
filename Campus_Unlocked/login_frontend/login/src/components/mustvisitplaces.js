@@ -104,7 +104,7 @@ function ImageGallery() {
           <img src="https://qph.cf2.quoracdn.net/main-qimg-ba32e62752c191dbb2aaefdbad7808fb-lq" alt="Image 4" className="ri"/>
           <p>Rajeev Motwani Building</p>
           </Link>
-        <Link to="/air" className="column1">
+        <Link to="/flight" className="column1">
           <img src="https://fastly.4sqi.net/img/general/600x600/57723951_FUTYjaEAO7tIItJoTNagpSq9cdQiusRK9MQfTD0geuA.jpg" alt="Image 5" className="ri"/>
           <p>Airstrip</p>
           </Link>
